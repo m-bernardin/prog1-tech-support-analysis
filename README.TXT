@@ -27,3 +27,6 @@ Then start describing your problem by typing in the terminal window.
 
 The purpose of this project is to demonstrate and study library classes, such 
 as ArrayList, HashMap, HashSet, and Random.
+
+q43. maps a given value to a given key if its empty or null
+q44. 
