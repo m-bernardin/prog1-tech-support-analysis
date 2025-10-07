@@ -1,5 +1,4 @@
-import java.util.HashMap;
-import java.util.HashSet;
+import java.util.*;
 
 /**
  * Keep a record of how many times each word was entered by users.
@@ -32,8 +31,15 @@ public class WordCounter
         }
     }
     
-    public String wordCount()
+    public void wordCount(Set keySet)
     {
-                
+            System.out.println("Word Count:");
+            //Set wordSet = counts.keySet();
+            //Iterator words = wordSet.iterator();
+            counts.forEach( (k, v) -> {
+                                        if(!keySet.contains(k)){
+                                            System.out.println(k + ": " + v);
+                                            }           
+                                        } );
     }
 }
