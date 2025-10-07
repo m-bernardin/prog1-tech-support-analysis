@@ -18,4 +18,6 @@ comment5.target=java.lang.String\ pickDefaultResponse()
 comment5.text=\r\n\ Randomly\ select\ and\ return\ one\ of\ the\ default\ responses.\r\n\ @return\ \ \ \ \ A\ random\ default\ response\r\n
 comment6.params=
 comment6.target=java.util.Set\ getKeys()
-numComments=7
+comment7.params=
+comment7.target=java.util.HashMap\ getMap()
+numComments=8

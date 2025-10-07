@@ -33,13 +33,20 @@ public class WordCounter
     
     public void wordCount(Set keySet)
     {
-            System.out.println("Word Count:");
-            //Set wordSet = counts.keySet();
-            //Iterator words = wordSet.iterator();
-            counts.forEach( (k, v) -> {
-                                        if(!keySet.contains(k)){
-                                            System.out.println(k + ": " + v);
-                                            }           
-                                        } );
+        System.out.println("Word Count:");
+        counts.forEach( (k, v) -> {
+                                    if(!keySet.contains(k)){
+                                        System.out.println(k + ": " + v);
+                                        }           
+                                    } );
+    }
+    
+    public void printUsageCount(HashMap<String, String> responseMap)
+    {
+        for(String word : counts.keySet()){
+            if(responseMap.get(word)==null){
+                System.out.println(word + ": " + counts.get(word));
+            }
+        }
     }
 }

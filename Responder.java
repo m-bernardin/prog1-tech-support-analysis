@@ -179,4 +179,9 @@ public class Responder
     {
         return responseMap.keySet();
     }
+    
+    public HashMap<String, String> getMap()
+    {
+        return responseMap;
+    }
 }
